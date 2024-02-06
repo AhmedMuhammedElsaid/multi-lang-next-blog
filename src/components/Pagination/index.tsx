@@ -19,12 +19,14 @@ const Pagination: FC<IPropsPagination> = ({ postsPerPage, totalPosts }) => {
     params.set("page", number.toString());
     replace(`${pathname}?${params.toString()}`);
   };
+
   const isActiveBtn = searchParams.get("page")?.toString();
+
   return (
-    <nav className={styles.paginationWrapper}>
+    <section className={styles.paginationWrapper}>
       <ul className={styles.paginationWrapper}>
         {pageNumbers.map((number) => (
-          <li className="mr-6" key={number}>
+          <li key={number}>
             <button
               className={`${styles.btn} ${
                 isActiveBtn === number.toString() ? styles.active : ""
@@ -36,7 +38,7 @@ const Pagination: FC<IPropsPagination> = ({ postsPerPage, totalPosts }) => {
           </li>
         ))}
       </ul>
-    </nav>
+    </section>
   );
 };
 

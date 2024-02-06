@@ -45,3 +45,8 @@ export interface IPropsPagination {
     postsPerPage: number;
     totalPosts: number;
 }
+export interface IPropsPaginationHelper {
+    postsPerPage: number;
+    currentPage: number;
+    posts: IPost[];
+}

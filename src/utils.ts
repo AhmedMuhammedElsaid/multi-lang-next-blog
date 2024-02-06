@@ -1,5 +1,5 @@
 import data from '../assets/posts.json';
-import { IPost } from './app/[lang]/types';
+import { IPost, IPropsPaginationHelper } from './app/[lang]/types';
 
 export const getPosts = (): IPost[] => {
     return data;
@@ -7,7 +7,7 @@ export const getPosts = (): IPost[] => {
 
 
 
-export const handlePagination = (postsPerPage: number, currentPage: number, posts: IPost[]) => {
+export const handlePagination = ({ postsPerPage, currentPage, posts }: IPropsPaginationHelper) => {
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     return posts.slice(indexOfFirstPost, indexOfLastPost);

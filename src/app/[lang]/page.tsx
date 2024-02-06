@@ -46,17 +46,17 @@ const Page: React.FC<IParams> = async ({ params: { lang }, searchParams }) => {
     return newData;
   };
 
+  // pagination Helper Fn
+  const currentPosts = handlePagination({
+    currentPage,
+    postsPerPage: 6,
+    posts: handleGetCurrentPosts(),
+  });
+
   if (!posts?.length) return <div>{t("loading")}</div>;
 
   if (!handleGetCurrentPosts()?.length)
     return <div className={classes.notFound}>{t("no-posts-found")}</div>;
-
-  // pagination logic
-  const currentPosts = handlePagination(
-    6,
-    currentPage,
-    handleGetCurrentPosts()
-  );
 
   return (
     <div className={classes.main}>

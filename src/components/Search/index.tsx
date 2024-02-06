@@ -3,7 +3,6 @@ import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import { useDebouncedCallback } from "use-debounce";
 import styles from "./index.module.css";
 import useTranslation from "next-translate/useTranslation";
-import { useQueryState } from "nuqs";
 import { useState } from "react";
 
 export default function Search({ placeholder }: { placeholder: string }) {

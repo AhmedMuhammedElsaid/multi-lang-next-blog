@@ -1,6 +1,6 @@
 {
   "name": "multi-lang-next13-app",
-  "description": "A multi language nextjs 13 app with next-translate,Pagination,Filter,Search and next-translate-plugin",
+  "description": "A Mobile first multi language nextjs 13 app with a middleware for localization using  next-translate,Pagination,Filter,Search and next-translate-plugin",
   "author": {
     "name": "Ahmed Muhammed Elsaid",
     "email": "ahmed.muhammed.elsaid@gmail.com"

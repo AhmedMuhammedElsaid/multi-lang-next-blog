@@ -1,0 +1,26 @@
+.btn {
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+  margin-block-start: 10px;
+}
+
+.paginationWrapper button {
+  width: 58px;
+  height: 41px;
+  border-radius: 20px;
+  border: none;
+  /* background: #000; */
+  /* color: #fff; */
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+}

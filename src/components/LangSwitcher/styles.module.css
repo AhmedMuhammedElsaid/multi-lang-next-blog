@@ -1,0 +1,28 @@
+.langSwitcher {
+  color: #000;
+  background: #e8e8e8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  width: 80px;
+  height: 46px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: none;
+}
+.langSwitcher:last-child {
+  margin-inline-end: 9rem;
+  @media (max-width: 768px) {
+    margin-inline-end: 0;
+  }
+}
+.langSwitcherWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+  align-items: center;
+  gap: 25px;
+}

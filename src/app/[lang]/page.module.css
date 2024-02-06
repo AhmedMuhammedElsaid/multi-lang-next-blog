@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .main {
+    width: 100%;
+  }
+}
+.notFound {
+  font-size: 35px;
+  font-weight: 600;
+  opacity: 0.7;
+  text-transform: capitalize;
+  line-height: 1.2;
+  @media (max-width: 700px) {
+    font-size: 25px;
+  }
+}
+.wrapper {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+}

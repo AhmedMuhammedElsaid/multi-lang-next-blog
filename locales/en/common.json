@@ -1,0 +1,16 @@
+{
+  "posts": "Posts",
+  "hello": "Hello",
+  "post-num": "Post Details",
+  "home": "Home",
+  "ar": "ع",
+  "en": "EN",
+  "loading-post": "Loading Post Details...",
+  "loading": "Loading...",
+  "filter-tag": "Filter By Tag",
+  "search": "Search",
+  "tag1": "Tag1",
+  "search-placeholder": "Type here to search",
+  "tag2": "Tag2",
+  "no-posts-found": "No posts found"
+}

@@ -1,0 +1,24 @@
+.Nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  height: 80px;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+  }
+}
+
+.NavLink {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+.NavLink:hover {
+  color: #0070f3;
+}

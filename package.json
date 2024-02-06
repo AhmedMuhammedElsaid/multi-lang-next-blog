@@ -1,29 +1,42 @@
 {
   "name": "multi-lang-next13-app",
+  "description": "A multi language nextjs 13 app with next-translate,Pagination,Filter,Search and next-translate-plugin",
+  "author": {
+    "name": "Ahmed Muhammed Elsaid",
+    "email": "ahmed.muhammed.elsaid@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
+    "negotiator": "^0.6.3",
+    "next": "13.3.1",
+    "next-translate": "^2.0.5",
+    "next-translate-plugin": "^2.6.2",
+    "nuqs": "^1.16.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.6",
-    "next-translate": "^1.0.4"
-
+    "react-icons": "^5.0.1",
+    "use-debounce": "^10.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@testing-library/react": "^14.2.1",
+    "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
     "postcss": "^8",
     "tailwindcss": "^3",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6"
+    "typescript": "^5"
   }
 }
